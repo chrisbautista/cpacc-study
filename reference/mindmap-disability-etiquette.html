@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Disability etiquette map</title><link rel="stylesheet" href="../assets/style.css"></head>
+<body><main>
+<nav class="nav" aria-label="Reference navigation"><a href="../index.html">Index</a> · <a href="acronyms.html">Acronyms</a> · <a href="disability-etiquette.html">Etiquette sheet</a></nav>
+<p class="kicker">Reference · CPACC 1E · Map</p>
+<h1>Disability etiquette</h1>
+<p class="lede">Source: <a href="../references/CPACCBoK.pdf">BoK p. 35</a>. Lesson: <a href="../lessons/0017-disability-etiquette.html">17</a>. Needs an internet connection to draw; arrows are labelled with the relationship.</p>
+<pre class="mermaid">
+flowchart LR
+  DE["Disability etiquette"]
+  IN["Personal interactions"]
+  LG["Inclusive language"]
+
+  DE -->|"is"| D0["Guidelines for respectful interaction and communication"]
+  DE -->|"covers"| D1["Behavior, attitudes, respectful language"]
+  DE -->|"applies to"| IN
+  DE -->|"applies to"| LG
+
+  IN -->|"rule 1"| R1["Speak directly to the person, not the companion"]
+  IN -->|"rule 2"| R2["Do not assume what they can or cannot do"]
+  IN -->|"rule 3"| R3["Help only if asked or after asking permission"]
+  R3 -->|"because"| R3b["Impact of disability varies widely"]
+  IN -->|"rule 4"| R4["Acknowledge their ability to decide"]
+  IN -->|"rule 5"| R5["Respect personal space: no touching wheelchair or equipment"]
+
+  LG -->|"form 1"| PF["People first"]
+  LG -->|"form 2"| IF["Identity first"]
+  PF -->|"example"| P1["a person with a disability"]
+  PF -->|"emphasis"| P2["The person, to avoid labelling and stigma"]
+  PF -->|"used by"| P3["UNCRPD, G3ict and IAAP; most common recommendation"]
+  IF -->|"example"| I1["a disabled person"]
+  IF -->|"emphasis"| I2["Disability as a key part of identity"]
+  IF -->|"preferred by"| I3["Some people, often self-advocates"]
+  LG -->|"for a specific person"| A1["Ask what they prefer"]
+
+  classDef root fill:#222,stroke:#000,color:#fff;
+  classDef act fill:#b42318,stroke:#7a1a10,color:#fff;
+  classDef pf fill:#0b5cab,stroke:#073d73,color:#fff;
+  classDef idf fill:#6b2d8f,stroke:#45185f,color:#fff;
+  classDef ask fill:#146c2e,stroke:#0d4a20,color:#fff;
+  class DE,D0,D1 root;
+  class IN,R1,R2,R3,R3b,R4,R5 act;
+  class LG,PF,P1,P2,P3 pf;
+  class IF,I1,I2,I3 idf;
+  class A1 ask;
+  linkStyle default stroke:#222,stroke-width:2px;
+</pre>
+<p>Reading it: each arrow label says how the bubble on the right relates to the bubble on the left. Red is personal interactions, blue people first language, purple identity first language, green the rule for a specific person.</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{edgeLabelBackground:'#ffffff'},flowchart:{useMaxWidth:true,htmlLabels:true}});</script>
+</main></body></html>
