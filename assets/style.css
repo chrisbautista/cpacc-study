@@ -2,7 +2,7 @@
 @media (prefers-color-scheme:dark){:root{--bg:#16171a;--fg:#ececea;--muted:#a8a8a2;--accent:#8ec1f5;--ok:#7fd69a;--bad:#ff9b9b;--rule:#3a3b40;--card:#202226}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:1.125rem/1.65 Georgia,"Iowan Old Style",serif}
-main{max-width:60rem;margin:0 auto;padding:2rem 1rem 4rem}
+main{max-width:80rem;margin:0 auto;padding:2rem 1rem 4rem}
 h1{font-size:2rem;line-height:1.2;margin:.2rem 0 .5rem}
 h2{font-size:1.3rem;margin:2.2rem 0 .5rem;border-bottom:1px solid var(--rule);padding-bottom:.2rem}
 .kicker{font:600 .8rem/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}

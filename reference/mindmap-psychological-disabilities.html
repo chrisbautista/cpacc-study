@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Psychological disabilities map</title><link rel="stylesheet" href="../assets/style.css"></head>
+<body><main>
+<nav class="nav" aria-label="Reference navigation"><a href="../index.html">Index</a> · <a href="acronyms.html">Acronyms</a> · <a href="psychological-disabilities.html">Psychological sheet</a></nav>
+<p class="kicker">Reference · CPACC 1B8 · Map</p>
+<h1>Psychological disabilities</h1>
+<p class="lede">Source: <a href="../references/CPACCBoK.pdf">BoK pp. 28–31</a>. Lesson: <a href="../lessons/0014-psychological-disabilities.html">14</a>. Needs an internet connection to draw; arrows are labelled with the relationship.</p>
+<pre class="mermaid">
+flowchart LR
+  PD["Psychological disabilities"]
+  AX["Anxiety disorders"]
+  MD["Mood disorders"]
+  PS["Psychotic disorders"]
+
+  PD -->|"group 1"| AX
+  PD -->|"group 2"| MD
+  PD -->|"group 3"| PS
+
+  AX -->|"prevalence"| AN1["2.5 to 7% by country"]
+  AX -->|"count"| AN2["284 million in 2017, most prevalent"]
+  AX -->|"type"| GAD["GAD"]
+  AX -->|"type"| PAN["Panic disorder"]
+  AX -->|"type"| SOC["Social anxiety disorder"]
+  GAD -->|"is"| G1["Persistent anxiety for months or years"]
+  PAN -->|"is"| P1["Frequent unexpected attacks, no clear trigger"]
+  PAN -->|"symptoms"| P2["Racing heart, sweating, chest pain, impending doom"]
+  SOC -->|"is"| S1["Intense fear of being watched and judged"]
+  SOC -->|"signs"| S2["Blushing, little eye contact, soft voice"]
+
+  MD -->|"most common"| M1["Depression, bipolar, seasonal affective, self-harm"]
+  MD -->|"includes"| BP["Bipolar disorder"]
+  BP -->|"is"| B1["Extreme mood swings, episodes last weeks"]
+  BP -->|"episode type 1"| B2["Depression: low energy, hopeless"]
+  BP -->|"episode type 2"| B3["Mania: high energy, overjoyed, risky choices"]
+  BP -->|"count"| B4["19 million in 2019"]
+
+  PS -->|"is"| PS1["Thinking and perceptions affected, lose touch with reality"]
+  PS -->|"main symptom"| D1["Delusions: believing things not true"]
+  PS -->|"main symptom"| D2["Hallucinations: perceiving things not there"]
+  PS -->|"one type"| SZ["Schizophrenia"]
+  SZ -->|"count"| Z1["24 million, 1 in 300"]
+
+  BAR["Barriers"] -->|"affect people with"| PD
+  BAR --> BA1["Limited, costly mental healthcare"]
+  BAR --> BA2["Providers lack diagnostic knowledge"]
+  BAR --> BA3["Social stigma"]
+  BAR --> BA4["No support for cognitive challenges"]
+  BAR --> BA5["Students: no school support"]
+
+  AT["Assistive technology"] -->|"supports people with"| PD
+  AT --> AT1["Mood, stress, anxiety apps"]
+  AT --> AT2["Memory aids, reminders"]
+  AT --> AT3["Text-to-speech, voice recognition"]
+  AT --> AT4["Noise monitoring devices"]
+
+  classDef anx fill:#b42318,stroke:#7a1a10,color:#fff;
+  classDef mood fill:#0b5cab,stroke:#073d73,color:#fff;
+  classDef psy fill:#6b2d8f,stroke:#45185f,color:#fff;
+  classDef help fill:#146c2e,stroke:#0d4a20,color:#fff;
+  classDef root fill:#222,stroke:#000,color:#fff;
+  class PD root;
+  class AX,AN1,AN2,GAD,PAN,SOC,G1,P1,P2,S1,S2 anx;
+  class MD,M1,BP,B1,B2,B3,B4 mood;
+  class PS,PS1,D1,D2,SZ,Z1 psy;
+  class BAR,BA1,BA2,BA3,BA4,BA5,AT,AT1,AT2,AT3,AT4 help;
+  linkStyle default stroke:#222,stroke-width:2px;
+</pre>
+<p>Reading it: each arrow label says how the bubble on the right relates to the bubble on the left. Red is anxiety, blue mood, purple psychotic disorders, green barriers and assistive technology.</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{edgeLabelBackground:'#ffffff'},flowchart:{useMaxWidth:true,htmlLabels:true}});</script>
+</main></body></html>

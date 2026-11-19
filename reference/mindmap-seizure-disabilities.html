@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Seizure disabilities map</title><link rel="stylesheet" href="../assets/style.css"></head>
+<body><main>
+<nav class="nav" aria-label="Reference navigation"><a href="../index.html">Index</a> · <a href="acronyms.html">Acronyms</a> · <a href="seizure-disabilities.html">Seizure sheet</a></nav>
+<p class="kicker">Reference · CPACC 1B7 · Map</p>
+<h1>Seizure disabilities</h1>
+<p class="lede">Source: <a href="../references/CPACCBoK.pdf">BoK p. 27</a>. Lesson: <a href="../lessons/0013-seizure-disabilities.html">13</a>. Needs an internet connection to draw; arrows are labelled with the relationship.</p>
+<pre class="mermaid">
+flowchart LR
+  SZ["Seizure"]
+  EP["Epilepsy"]
+  PE["Photosensitive epilepsy"]
+
+  SZ -->|"defined as"| DF["Sudden, uncontrolled electrical disturbance in the brain"]
+  SZ -->|"can change"| CH["Behavior, movements, feelings, consciousness"]
+  SZ -->|"2 or more, or recurrent tendency, is"| EP
+  EP -->|"WHO count"| N1["50 million people"]
+  EP -->|"one type is"| PE
+  PE -->|"share of epilepsy"| N2["About 3%"]
+  PE -->|"triggered by"| TG["Flashing or flickering lights or patterns"]
+  TG -->|"most likely rate"| R1["16 to 25 per second"]
+  TG -->|"range"| R2["As low as 3, as high as 60"]
+  TG -->|"patterns more likely"| PT["High contrast or moving"]
+
+  WEB["Web limit"] -->|"protects people with"| PE
+  WEB -->|"rule"| W1["No more than 3 flashes in any one second"]
+
+  BA["Barriers"] -->|"affect people with"| SZ
+  BA --> B1["Sudden loss of consciousness: swimming, bath, power tools"]
+  BA --> B2["Flickering or moving content"]
+  BA --> B3["No control to stop video or animation"]
+
+  AT["Assistive technology"] -->|"supports people with"| SZ
+  AT --> A1["Diary apps with reminders"]
+  AT --> A2["Smart watches: alerts, GPS"]
+  AT --> A3["Service animals"]
+  AT --> A4["Wearable alert buttons"]
+  AT --> A5["Protective wear"]
+  AT --> A6["Flicker-free monitors, glare guards, non-glare glasses"]
+
+  classDef core fill:#b42318,stroke:#7a1a10,color:#fff;
+  classDef num fill:#0b5cab,stroke:#073d73,color:#fff;
+  classDef help fill:#146c2e,stroke:#0d4a20,color:#fff;
+  classDef bar fill:#6b2d8f,stroke:#45185f,color:#fff;
+  class SZ,EP,PE,DF,CH,TG,PT core;
+  class N1,N2,R1,R2,W1,WEB num;
+  class AT,A1,A2,A3,A4,A5,A6 help;
+  class BA,B1,B2,B3 bar;
+  linkStyle default stroke:#222,stroke-width:2px;
+</pre>
+<p>Reading it: each arrow label says how the bubble on the right relates to the bubble on the left. Red is the condition, blue the numbers and limits, purple the barriers, green the assistive technology.</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{edgeLabelBackground:'#ffffff'},flowchart:{useMaxWidth:true,htmlLabels:true}});</script>
+</main></body></html>

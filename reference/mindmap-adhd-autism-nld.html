@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ADHD, autism and NLD map</title><link rel="stylesheet" href="../assets/style.css"></head>
+<body><main>
+<nav class="nav" aria-label="Reference navigation"><a href="../index.html">Index</a> · <a href="acronyms.html">Acronyms</a> · <a href="cognitive-disabilities.html">Cognitive sheet</a></nav>
+<p class="kicker">Reference · CPACC 1B · Mind map</p>
+<h1>ADHD, autism and NLD</h1>
+<p class="lede">Source: <a href="../references/CPACCBoK.pdf">BoK pp. 23–24</a>. Lesson: <a href="../lessons/0011-cognitive-part-2-adhd-autism.html">11</a>. Needs an internet connection to draw; arrows are labelled with the relationship.</p>
+<pre class="mermaid">
+flowchart LR
+  ADHD["ADHD"]
+  ASD["Autism (ASD)"]
+  NLD["NLD"]
+
+  ADHD -->|"symptom group 1"| IN["Inattention / distraction"]
+  ADHD -->|"symptom group 2"| HY["Hyperactive / impulsive"]
+  IN -->|"example"| IN1["Distracted, can't finish tasks, forgetful"]
+  HY -->|"example"| HY1["Fidgets, can't wait turn, talks, interrupts"]
+  ADHD -->|"diagnosed with"| TH["Children 6+ in either group, adults 5+ in either group"]
+  ADHD -->|"prevalence"| PR["Children 2-7%, adults about 4%"]
+  ADHD -->|"NHS: 2-3 in 10 have only"| IN
+  ADHD -->|"can co-occur with"| ASD
+
+  ASD -->|"WHO: is a group of"| BR["Complex brain development disorders"]
+  ASD -->|"DSM-V criterion 1"| C1["Social communication limits"]
+  ASD -->|"DSM-V criterion 2"| C2["Repetitive behaviours"]
+  ASD -->|"graded into"| LV["3 severity levels"]
+  ASD -->|"typical traits"| TR["Sensory sensitivity, non-literal language, social overwhelm"]
+  ASD -->|"can occur"| ID["With or without intellectual disability"]
+  ASD -->|"prevalence"| P2["About 1 in 100"]
+  AS["Asperger syndrome"] -->|"now classed as a form of"| ASD
+
+  NLD -->|"same kind of disorder as, but milder than"| AS
+  NLD -->|"strengths"| ST["Vocabulary, memory"]
+  NLD -->|"difficulties"| WK["Social skills, abstract reasoning, change"]
+  NLD -->|"prevalence"| P3["About 1% of US children, boys = girls"]
+
+  classDef adhd fill:#b42318,stroke:#7a1a10,color:#fff;
+  classDef asd fill:#0b5cab,stroke:#073d73,color:#fff;
+  classDef nld fill:#146c2e,stroke:#0d4a20,color:#fff;
+  class ADHD,IN,HY,IN1,HY1,TH,PR adhd;
+  class ASD,BR,C1,C2,LV,TR,ID,P2,AS asd;
+  class NLD,ST,WK,P3 nld;
+  linkStyle default stroke:#222,stroke-width:2px;
+</pre>
+<p>Reading it: each arrow label says how the bubble on the right relates to the bubble on the left. Colour shows which condition a bubble belongs to.</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{edgeLabelBackground:'#ffffff'},flowchart:{useMaxWidth:true,htmlLabels:true}});</script>
+</main></body></html>
