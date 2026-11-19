@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Disability statistics map</title><link rel="stylesheet" href="../assets/style.css"></head>
+<body><main>
+<nav class="nav" aria-label="Reference navigation"><a href="../index.html">Index</a> · <a href="acronyms.html">Acronyms</a> · <a href="disability-statistics.html">Statistics sheet</a></nav>
+<p class="kicker">Reference · CPACC 1D · Map</p>
+<h1>Disability statistics</h1>
+<p class="lede">Source: <a href="../references/CPACCBoK.pdf">BoK pp. 33–34</a>. Lesson: <a href="../lessons/0016-disability-statistics.html">16</a>. Needs an internet connection to draw; arrows are labelled with the relationship.</p>
+<pre class="mermaid">
+flowchart LR
+  ST["Disability statistics"]
+  LM["Limitations"]
+  WH["WHO figures"]
+  US["Uses"]
+
+  ST -->|"have"| LM
+  ST -->|"reported by"| WH
+  ST -->|"are used for"| US
+  ST -->|"still useful as"| U0["Background and sense of scale"]
+
+  LM -->|"limitation 1"| L1["Census lacks details about different disabilities"]
+  LM -->|"limitation 2"| L2["Terminology varies between countries"]
+  LM -->|"limitation 3"| L3["Multiple disabilities fall between groups"]
+
+  WH -->|"total"| W1["1.3 billion: 16%, 1 in 6 of the world"]
+  WH -->|"life span"| W2["Up to 20 years earlier death"]
+  WH -->|"health risk"| W3["Twice the risk of depression, asthma, diabetes, stroke, obesity"]
+  WH -->|"transport"| W4["15 times more difficult"]
+  WH -->|"inequities caused by"| W5["Stigma, discrimination, poverty, exclusion, health system barriers"]
+
+  US -->|"Eurostat: policy areas"| P1["Health, social protection, housing, transport, culture, education, employment"]
+  US -->|"UNH: questions answered"| P2["How many, which types and ages, employed, income, poverty"]
+
+  classDef root fill:#222,stroke:#000,color:#fff;
+  classDef lim fill:#b42318,stroke:#7a1a10,color:#fff;
+  classDef who fill:#0b5cab,stroke:#073d73,color:#fff;
+  classDef use fill:#146c2e,stroke:#0d4a20,color:#fff;
+  class ST,U0 root;
+  class LM,L1,L2,L3 lim;
+  class WH,W1,W2,W3,W4,W5 who;
+  class US,P1,P2 use;
+  linkStyle default stroke:#222,stroke-width:2px;
+</pre>
+<p>Reading it: each arrow label says how the bubble on the right relates to the bubble on the left. Red is limitations, blue the WHO figures, green the uses.</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{edgeLabelBackground:'#ffffff'},flowchart:{useMaxWidth:true,htmlLabels:true}});</script>
+</main></body></html>
