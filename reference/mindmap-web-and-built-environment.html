@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WCAG and built environment map</title><link rel="stylesheet" href="../assets/style.css"><style>.map{background:#fff;padding:1rem;overflow-x:auto;border-radius:8px;margin:1rem 0}.edgeLabel,.edgeLabel *{color:#111!important;background:#fff!important}.edgeLabel p{margin:0;padding:1px 3px}</style></head>
+<body><main>
+<nav class="nav" aria-label="Reference navigation"><a href="../index.html">Index</a> · <a href="acronyms.html">Acronyms</a> · <a href="web-and-built-environment.html">Sheet</a></nav>
+<p class="kicker">Reference · CPACC 2C, 2D · Map</p>
+<h1>WCAG principles and the built environment</h1>
+<p class="lede">Source: <a href="../references/CPACCBoK.pdf">BoK pp. 39–41</a>. Lesson: <a href="../lessons/0019-wcag-and-built-environment.html">19</a>. Needs an internet connection to draw; arrows are labelled with the relationship.</p>
+<div class="map"><pre class="mermaid">
+flowchart LR
+  WA["Web accessibility"]
+  WC["WCAG 2.2"]
+  BE["Built environment"]
+
+  WA -->|"covers"| W1["Auditory, cognitive, neurological, physical, speech, visual"]
+  WA -->|"also benefits"| W2["Small screens, older people, temporary, situational, bandwidth"]
+  WA -->|"is guided by"| WC
+  WC -->|"has"| C1["4 principles and 13 guidelines"]
+  WC -->|"Perceivable"| C2["4 guidelines"]
+  WC -->|"Operable"| C3["5 guidelines"]
+  WC -->|"Understandable"| C4["3 guidelines"]
+  WC -->|"Robust"| C5["1 guideline: compatibility"]
+
+  BE -->|"goal"| E1["Buildings, public spaces, transport accessible to all"]
+  BE -->|"where UD began"| E2["UD principles originally developed here"]
+  BE -->|"skipping UD costs"| E3["Often more than construction"]
+  BE -->|"minimum standards"| M1["Compliance, often only accommodation"]
+  BE -->|"best practice guidelines"| M2["Best possible result for inclusion"]
+  BE -->|"focus"| F1["Access in and out, moving around, transport"]
+  F1 -->|"often tied to"| F2["Safety and evacuation"]
+
+  classDef pf fill:#0b5cab,stroke:#073d73,color:#fff;
+  classDef idf fill:#6b2d8f,stroke:#45185f,color:#fff;
+  classDef ask fill:#146c2e,stroke:#0d4a20,color:#fff;
+  classDef act fill:#b42318,stroke:#7a1a10,color:#fff;
+  class WA,WC,C1,C2,C3,C4,C5 pf;
+  class W1,W2 idf;
+  class BE,E1,E2,E3,M2,F1,F2 ask;
+  class M1 act;
+  linkStyle default stroke:#222,stroke-width:2px;
+</pre></div>
+<p>Reading it: each arrow label says how the bubble on the right relates to the bubble on the left. Blue is WCAG, purple beneficiaries, green the built environment, red the minimum-standard problem.</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{fontSize:'16px',edgeLabelBackground:'#ffffff'},flowchart:{useMaxWidth:false,htmlLabels:true,nodeSpacing:30,rankSpacing:70}});</script>
+</main></body></html>

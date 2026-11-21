@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ADHD, autism and NLD map</title><link rel="stylesheet" href="../assets/style.css"></head>
+<title>ADHD, autism and NLD map</title><link rel="stylesheet" href="../assets/style.css"><style>.map{background:#fff;padding:1rem;overflow-x:auto;border-radius:8px;margin:1rem 0}.edgeLabel,.edgeLabel *{color:#111!important;background:#fff!important}.edgeLabel p{margin:0;padding:1px 3px}</style></head>
 <body><main>
 <nav class="nav" aria-label="Reference navigation"><a href="../index.html">Index</a> · <a href="acronyms.html">Acronyms</a> · <a href="cognitive-disabilities.html">Cognitive sheet</a></nav>
 <p class="kicker">Reference · CPACC 1B · Mind map</p>
 <h1>ADHD, autism and NLD</h1>
 <p class="lede">Source: <a href="../references/CPACCBoK.pdf">BoK pp. 23–24</a>. Lesson: <a href="../lessons/0011-cognitive-part-2-adhd-autism.html">11</a>. Needs an internet connection to draw; arrows are labelled with the relationship.</p>
-<pre class="mermaid">
+<div class="map"><pre class="mermaid">
 flowchart LR
   ADHD["ADHD"]
   ASD["Autism (ASD)"]
@@ -42,8 +42,8 @@ flowchart LR
   class ASD,BR,C1,C2,LV,TR,ID,P2,AS asd;
   class NLD,ST,WK,P3 nld;
   linkStyle default stroke:#222,stroke-width:2px;
-</pre>
+</pre></div>
 <p>Reading it: each arrow label says how the bubble on the right relates to the bubble on the left. Colour shows which condition a bubble belongs to.</p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{edgeLabelBackground:'#ffffff'},flowchart:{useMaxWidth:true,htmlLabels:true}});</script>
+<script>mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{fontSize:'16px',edgeLabelBackground:'#ffffff'},flowchart:{useMaxWidth:false,htmlLabels:true,nodeSpacing:30,rankSpacing:70}});</script>
 </main></body></html>
