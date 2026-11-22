@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Seven principles of UD map</title><link rel="stylesheet" href="../assets/style.css"><style>.map{background:#fff;padding:1rem;overflow-x:auto;border-radius:8px;margin:1rem 0}.edgeLabel,.edgeLabel *{color:#111!important;background:#fff!important}.edgeLabel p{margin:0;padding:1px 3px}</style></head>
+<body><main>
+<nav class="nav" aria-label="Reference navigation"><a href="../index.html">Index</a> · <a href="acronyms.html">Acronyms</a> · <a href="seven-principles-of-ud.html">Sheet</a></nav>
+<p class="kicker">Reference · CPACC 2E · Map</p>
+<h1>The seven principles of universal design</h1>
+<p class="lede">Source: <a href="../references/CPACCBoK.pdf">BoK pp. 42–43</a>. Lesson: <a href="../lessons/0020-seven-principles-of-ud.html">20</a>. Needs an internet connection to draw; arrows are labelled with the relationship.</p>
+<div class="map"><pre class="mermaid">
+flowchart LR
+  UD["Universal design: good design for all"]
+  UD -->|"developed in 1997 by"| O1["NCSU working group led by Ronald Mace"]
+  UD -->|"has"| P["Seven principles"]
+  P -->|"1"| E["Equitable Use"]
+  P -->|"2"| F["Flexibility in Use"]
+  P -->|"3"| S["Simple and Intuitive Use"]
+  P -->|"4"| I["Perceptible Information"]
+  P -->|"5"| T["Tolerance for Error"]
+  P -->|"6"| L["Low Physical Effort"]
+  P -->|"7"| Z["Size and Space for Approach and Use"]
+  E -->|"means"| E1["Same means for all, no stigma"]
+  F -->|"means"| F1["Choices, left or right hand, own pace"]
+  S -->|"means"| S1["No complexity, prompting and feedback"]
+  I -->|"means"| I1["Several modes, contrast, legibility"]
+  T -->|"means"| T1["Warnings, fail-safe, hazards isolated"]
+  L -->|"means"| L1["Neutral position, little force and repetition"]
+  Z -->|"means"| Z1["Line of sight, reach, room for devices"]
+
+  classDef red fill:#b42318,stroke:#7a1a10,color:#fff;
+  classDef blue fill:#0b5cab,stroke:#073d73,color:#fff;
+  classDef purple fill:#6b2d8f,stroke:#45185f,color:#fff;
+  classDef green fill:#146c2e,stroke:#0d4a20,color:#fff;
+  class UD,O1,P red;
+  class E,E1,F,F1,S,S1 blue;
+  class I,I1,T,T1 purple;
+  class L,L1,Z,Z1 green;
+  linkStyle default stroke:#222,stroke-width:2px;
+</pre></div>
+<p>Reading it: each arrow label says how the bubble on the right relates to the bubble on the left. Blue is use and people, purple information and safety, green the body, red the origin.</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{fontSize:'16px',edgeLabelBackground:'#ffffff'},flowchart:{useMaxWidth:false,htmlLabels:true,nodeSpacing:30,rankSpacing:70}});</script>
+</main></body></html>

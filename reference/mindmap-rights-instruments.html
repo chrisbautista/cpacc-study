@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rights instruments map</title><link rel="stylesheet" href="../assets/style.css"><style>.map{background:#fff;padding:1rem;overflow-x:auto;border-radius:8px;margin:1rem 0}.edgeLabel,.edgeLabel *{color:#111!important;background:#fff!important}.edgeLabel p{margin:0;padding:1px 3px}</style></head>
+<body><main>
+<nav class="nav" aria-label="Reference navigation"><a href="../index.html">Index</a> · <a href="acronyms.html">Acronyms</a> · <a href="rights-instruments.html">Sheet</a></nav>
+<p class="kicker">Reference · CPACC 3A, 3B · Map</p>
+<h1>International and regional rights instruments</h1>
+<p class="lede">Source: <a href="../references/CPACCBoK.pdf">BoK pp. 48–54</a>. Lesson: <a href="../lessons/0022-rights-instruments.html">22</a>. Needs an internet connection to draw; arrows are labelled with the relationship.</p>
+<div class="map"><pre class="mermaid">
+flowchart LR
+  INT["International instruments"]
+  INT -->|"1948"| U["UDHR: disability not listed"]
+  INT -->|"1975"| D["Declaration: recommendations only"]
+  INT -->|"2006"| C["CRPD"]
+  INT -->|"2013"| M["Marrakesh Treaty (WIPO)"]
+  C -->|"is"| C1["First binding international disability treaty"]
+  C -->|"views people as"| C2["Subjects with rights"]
+  C -->|"accessibility in"| C3["Article 3 principle, Article 9 detail"]
+  C -->|"EU and Member States"| C4["Each ratified"]
+  M -->|"creates"| M1["Copyright exception for print-disabled people"]
+
+  REG["Regional instruments"]
+  REG -->|"Europe 1950"| E1["ECHR: disability as other status"]
+  REG -->|"Europe 1961"| E2["European Social Charter: independence, integration"]
+  REG -->|"Europe 2000"| E3["EU Charter: Art. 26 integration, Art. 21 non-discrimination"]
+  E3 -->|"binding since"| E4["Treaty of Lisbon, 2009"]
+  REG -->|"Africa 1981"| A1["African Charter: disability not named"]
+  REG -->|"Africa 2018"| A2["Disability Rights Protocol: not yet in force"]
+  REG -->|"Americas 1999"| AM["Inter-American Convention: first regional binding disability treaty"]
+
+  classDef red fill:#b42318,stroke:#7a1a10,color:#fff;
+  classDef blue fill:#0b5cab,stroke:#073d73,color:#fff;
+  classDef purple fill:#6b2d8f,stroke:#45185f,color:#fff;
+  classDef green fill:#146c2e,stroke:#0d4a20,color:#fff;
+  class INT,U,D,M,M1 red;
+  class C,C1,C2,C3,C4 blue;
+  class REG,E1,E2,E3,E4 purple;
+  class A1,A2,AM green;
+  linkStyle default stroke:#222,stroke-width:2px;
+</pre></div>
+<p>Reading it: each arrow label says how the bubble on the right relates to the bubble on the left. Red is international, blue the CRPD, purple Europe, green the rest of the regions.</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{fontSize:'16px',edgeLabelBackground:'#ffffff'},flowchart:{useMaxWidth:false,htmlLabels:true,nodeSpacing:30,rankSpacing:70}});</script>
+</main></body></html>
