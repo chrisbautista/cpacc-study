@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Organizational accessibility map</title><link rel="stylesheet" href="../assets/style.css"><style>.map{background:#fff;padding:1rem;overflow-x:auto;border-radius:8px;margin:1rem 0}.edgeLabel,.edgeLabel *{color:#111!important;background:#fff!important}.edgeLabel p{margin:0;padding:1px 3px}</style></head>
+<body><main>
+<nav class="nav" aria-label="Reference navigation"><a href="../index.html">Index</a> · <a href="acronyms.html">Acronyms</a> · <a href="organizational-accessibility.html">Sheet</a></nav>
+<p class="kicker">Reference · CPACC 3F · Map</p>
+<h1>Integrating accessibility across the organization</h1>
+<p class="lede">Source: <a href="../references/CPACCBoK.pdf">BoK pp. 64–70</a>. Lesson: <a href="../lessons/0025-organizational-accessibility.html">25</a>. Needs an internet connection to draw; arrows are labelled with the relationship.</p>
+<div class="map"><pre class="mermaid">
+flowchart LR
+  PG["A program, not a project"]
+  PG -->|"W3C WAI phases"| W1["Initiate: business case, awareness"]
+  W1 -->|"then"| W2["Plan: policy, budget, responsibilities"]
+  W2 -->|"then"| W3["Implement: skills, early evaluation"]
+  W3 -->|"then"| W4["Sustain: legislation, user feedback"]
+  PG -->|"European Agency"| EA["Policy, Plan, Practice"]
+
+  MM["Maturity models"]
+  MM -->|"Business Disability Forum"| B1["Informal, Defined, Repeatable, Managed, Best practice"]
+  MM -->|"Carnegie Mellon CMM"| B2["Initial, Repeatable, Defined, Managed, Optimizing"]
+  B1 -->|"levels 2 and 3 swap"| B2
+
+  CH["Management champions"]
+  CH -->|"role models who"| C1["Build vision, sustain commitment"]
+  CH -->|"lead"| C2["Adoption of a maturity model"]
+  HR["Recruiting and hiring"]
+  HR -->|"digital skills"| H1["WCAG 2.1, PDF/UA, screen reader testing"]
+  PR["Legal and PR"]
+  PR -->|"consult first"| L1["Legal, risk and compliance"]
+
+  EV["Evaluating"]
+  EV -->|"when"| V1["Early and often, born accessible"]
+  EV -->|"include"| V2["Human evaluation and people with disabilities"]
+  PC["Procurement"]
+  PC -->|"best practice"| P1["Verify claims, contract it, review roadmaps"]
+
+  classDef red fill:#b42318,stroke:#7a1a10,color:#fff;
+  classDef blue fill:#0b5cab,stroke:#073d73,color:#fff;
+  classDef purple fill:#6b2d8f,stroke:#45185f,color:#fff;
+  classDef green fill:#146c2e,stroke:#0d4a20,color:#fff;
+  class PG,W1,W2,W3,W4,EA red;
+  class MM,B1,B2 blue;
+  class CH,C1,C2,HR,H1,PR,L1 purple;
+  class EV,V1,V2,PC,P1 green;
+  linkStyle default stroke:#222,stroke-width:2px;
+</pre></div>
+<p>Reading it: each arrow label says how the bubble on the right relates to the bubble on the left. Red is the WAI phases, blue the maturity models, purple people and champions, green evaluation and procurement.</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{fontSize:'16px',edgeLabelBackground:'#ffffff'},flowchart:{useMaxWidth:false,htmlLabels:true,nodeSpacing:30,rankSpacing:70}});</script>
+</main></body></html>
