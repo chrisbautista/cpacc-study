@@ -166,14 +166,14 @@ return visits are easy.
 - Epilepsy: **50 million** globally
 - Photosensitive epilepsy: **~3% of people with epilepsy**
 - Trigger range: **16–25 flashes/second** most likely; sensitivity as low as **3**, as high as **60**
-- **Rule: nothing flashes more than 3 times in any 1 second**
+- **Rule: nothing flashes more than 3 times in any 1 second** (unless the flash is below the general and red flash thresholds)
 
 **Psychological**
 - Anxiety disorders: **2.5–7%** by country; **284 million (2017)** — **most prevalent** mental health disorder
 - Bipolar: **19 million (2019)**
 - Schizophrenia: **24 million = 1 in 300**
 
-**Multiple/complex: 10–15%** of people with disabilities have complex needs
+**Multiple/complex: 10–15%** of people with disabilities have complex needs (UK and Australian sources; no global statistics)
 
 **CRPD: 160+ signed, 180+ ratified. ADRP: needs 15 ratifications, not yet in force (mid-2023).**
 
